@@ -1,0 +1,6 @@
+clean-files
+sbt compile
+compile
+clean-files
+compile
+exit

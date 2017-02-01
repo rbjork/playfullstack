@@ -1,0 +1,11 @@
+[0m[[31merror[0m] [0m/Users/ronaldbjork/playworkspace/play-scala-intro/app/controllers/MedController.scala:58: type mismatch;[0m
+[0m[[31merror[0m] [0m found   : play.api.libs.json.JsLookupResult[0m
+[0m[[31merror[0m] [0m required: Long[0m
+[0m[[31merror[0m] [0m        ckinrepo.createCheckin(patientID, checkInTime, painLevel, canEatDrink).map { _ =>[0m
+[0m[[31merror[0m] [0m                                          ^[0m
+[0m[[31merror[0m] [0m/Users/ronaldbjork/playworkspace/play-scala-intro/app/controllers/MedController.scala:58: type mismatch;[0m
+[0m[[31merror[0m] [0m found   : play.api.libs.json.JsLookupResult[0m
+[0m[[31merror[0m] [0m required: Boolean[0m
+[0m[[31merror[0m] [0m        ckinrepo.createCheckin(patientID, checkInTime, painLevel, canEatDrink).map { _ =>[0m
+[0m[[31merror[0m] [0m                                                                  ^[0m
+[0m[[31merror[0m] [0mtwo errors found[0m

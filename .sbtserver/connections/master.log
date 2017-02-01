@@ -1,0 +1,7 @@
+New log file opened at Thu Jan 26 10:14:38 PST 2017 by 4455@Ronalds-MacBook-Pro.local
+Taking next connection to: 49596
+New client attempting to connect on port: 49597-49596
+  Address = /10.0.0.8:49596
+This client on port 49597 has uuid 27a23383-14c9-4c98-8a19-26dafea86db7 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: play-fork-run-27a23383-14c9-4c98-8a19-26dafea86db7
+Taking next connection to: 49596

@@ -1,0 +1,43 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           controllers.PersonController.index
+POST    /person                     controllers.PersonController.addPerson
+GET     /persons                    controllers.PersonController.getPersons
+
+
+
+# GET     /checkin                        controllers.MedController.checkin
+# PATIENT API
+POST    /patient/checkin/:patientID     controllers.MedController.addCheckin(patientID:Long)
+# DOCTORS API
+# all checkins
+GET     /checkins                       controllers.MedController.getCheckins
+GET     /patient/checkin/:patientID     controllers.MedController.getPatientCheckins(patientID:Long)
+
+
+GET     /health                         controllers.HealthController.health
+# PATIENT API
+POST    /addhealth                      controllers.HealthController.addHealth
+GET     /loginpatient/:username         controllers.HealthController.login(username:String)
+
+
+# DOCTORS API
+# all checkins
+GET     /healths                        controllers.HealthController.getHealth
+GET     /patienthealth/:ckinID          controllers.HealthController.getPatientHealth(ckinID:Long)
+
+
+GET     /recommendation                 controllers.RecommendationController.recommendation
+POST    /addRecommendation              controllers.RecommendationController.addRecommendation
+
+GET     /patientrecommendations/:patientID   controllers.RecommendationController.getPatientRecommendations(patientID:Long)
+GET     /patient/medications/:patientID   controllers.RecommendationController.getPatientRecommendations(patientID:Long)
+
+
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)

@@ -1,0 +1,20 @@
+@(checkin2: Form[CreateHealthForm])(implicit messages: Messages)
+
+@import helper._
+
+@main("Welcome to Play") {
+    <script type='text/javascript' src='@routes.Assets.versioned("javascripts/index.js")'></script>
+
+    <ul id="checkins"></ul>
+
+    @form(routes.HealthController.addHealth()) {
+        @inputText(checkin2("ckinID"))
+        @inputText(checkin2("prescription"))
+        @inputText(checkin2("take"))
+        @inputText(checkin2("timeTaken"))
+
+        <div class="buttons">
+            <input type="submit" value="Add Health"/>
+        </div>
+    }
+}
